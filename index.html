@@ -11,21 +11,32 @@
   <title>Número secreto</title>
 </head>
 <body>
-  <input type="button" id="btn">
-  <label for="btn" class="botaoDarkMode"></label>
-  <main>
+  <nav>
+    <input type="button" id="btn">
+    <label for="btn" class="botaoDarkMode"><i class="fa-solid fa-moon"></i></label>
+    <input type="button" id="btnRestart">
+    <label for="btnRestart" class="btnRestart"><i class="fa-solid fa-rotate-right"></i></label>
+  </nav>
+
+  <main id="main">
+
     <div class="titulo-box">
       <h1>Acerte o número secreto</h1>
     </div>
+
     <h3>O numero secreto esta entre <span id="menor-valor">0</span> e <span id="maior-valor">100</span></h3>
+
     <div id="chute" class="mensagem">
       <div>
         <div>Você disse:</div>
-        <span class="box">20</span>
-        <div class="dica">O número secreto é maior</div>
+        <span class="box" id="boxResposta">20</span>
+        <div class="dica" id="dica"></div>
       </div>
     </div>
   </main>
+
   <script src="./app/sorteio.js"></script>
+  <script src="app/speechRecognition.js"></script>
+  <script src="app/validacao.js"></script>
 </body>
 </html>

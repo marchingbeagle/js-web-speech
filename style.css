@@ -6,20 +6,65 @@
   --primary-color: #263A29;
   --secondary-color: #E86A33;
   --third-color: #ebc172;
-  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+  --nav-color:  #000000;
 }
 
 .dark-mode{
-  --bg-color: #263A29;
+  --bg-color: #1a1d1b;
   --primary-color:#F2E3DB;
-  --secondary-color: #e97d4e;
+  --secondary-color: #ebc172;
   --third-color: #416146; 
-  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+  --nav-color:  #ffff;
 }
 
 body{
   background-color: var(--bg-color);
   transition: 1s;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-moon{
+  color: var(--nav-color)
+}
+
+.fa-sun{
+  color: var(--nav-color)
+}
+
+.fa-rotate-right{
+  color: var(--nav-color);
+}
+
+.botaoDarkMode{
+  display: block;
+  font-size: 4em;
+  position: relative;
+  margin: 2%;
+  padding: 40px;
+  cursor: pointer; 
+}
+
+.btnRestart{ 
+  display: block;
+  font-size: 4em;
+  position: relative;
+  margin: 2%;
+  padding: 40px;
+  cursor: pointer; 
+}
+
+#btn {
+  display: none;
+}
+
+#btnRestart{
+  display: none;
 }
 
 main{
@@ -32,20 +77,6 @@ main{
   align-items: center;
   text-align: center;
   margin: 0;
-}
-
-.botaoDarkMode{
-  display: block;
-  position: relative;
-  margin: 2%;
-  background-image: var(--label-icon); 
-  background-repeat: no-repeat;
-  padding: 40px;
-  cursor: pointer; 
-}
-
-#btn {
-  display: none;
 }
 
 .titulo-box{
@@ -77,12 +108,12 @@ h3 span{
 
 .box{
   display: inline-block;
-  padding: 0.5em;
+  padding: 3%;
   margin: 0.5em;
-  font-size: 4em;
+  font-size: 3em;
   color: var(--secondary-color);
   border: outset 10px var(--primary-color);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   box-shadow: 1em;
 }
 

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+:root{
+  --font-family: 'JetBrains Mono', monospace;
+  --bg-color: #F2E3DB;
+  --primary-color: #263A29;
+  --secondary-color: #E86A33;
+  --third-color: #ebc172;
+  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+}
+
+.dark-mode{
+  --bg-color: #263A29;
+  --primary-color:#F2E3DB;
+  --secondary-color: #e97d4e;
+  --third-color: #416146; 
+  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+}
+
+body{
+  background-color: var(--bg-color);
+  transition: 1s;
+}
+
+main{
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-weight: bold;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.botaoDarkMode{
+  display: block;
+  position: relative;
+  margin: 2%;
+  background-image: var(--label-icon); 
+  background-repeat: no-repeat;
+  padding: 40px;
+  cursor: pointer; 
+}
+
+#btn {
+  display: none;
+}
+
+.titulo-box{
+  background-color: var(--third-color);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1em;
+}
+
+h1{
+  font-size: 3em;
+}
+
+h3{
+  font-size: 1.2em;
+  padding-top: 5px ;
+  border-top: outset 2px var(--third-color);
+  margin-bottom: 1em;
+}
+
+h3 span{
+  color: var(--secondary-color);
+}
+
+.mensagem{
+  font-size: 1.2em;
+  margin-top: 2em;
+}
+
+.box{
+  display: inline-block;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 4em;
+  color: var(--secondary-color);
+  border: outset 10px var(--primary-color);
+  border-radius: 1rem;
+  box-shadow: 1em;
+}
+
+.dica{
+  font-size: 1em;
+}
+
